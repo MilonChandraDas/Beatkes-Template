@@ -1,0 +1,136 @@
+footer {
+  text-align: center;
+  margin-top: $sectionGap;
+  .footer__up {
+    background: #353535;
+    .main {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .foooter__one {
+        margin: 20px 0 40px;
+        text-align: left;
+        width: 25%;
+        p {
+          padding-top: 30px;
+          color: #ffffff;
+          line-height: 24px;
+          @include font($paragraphFontSize, $opensans, 400);
+          span {
+            display: inline-block;
+            padding-top: 35px;
+          }
+        }
+      }
+
+      .footer__two {
+        margin: 30px 0 60px;
+        width: 25%;
+        h2 {
+          text-align: left;
+          color: #ffffff;
+          text-transform: uppercase;
+          @include font($headingFontSize, $oswald, 500);
+          padding-bottom: 30px;
+        }
+        .call {
+          display: flex;
+          margin-bottom: 20px;
+          &:nth-child(4) {
+            margin-bottom: 0;
+          }
+          .call__icon {
+            font-size: 16px;
+            color: #ffffff;
+            width: 35px;
+            height: 35px;
+            background: $primaryColor;
+            border-radius: 50%;
+            line-height: 35px;
+            margin-right: 10px;
+          }
+          .call__info {
+            ul {
+              li {
+                text-align: left;
+                color: #ffffff;
+                @include font($paragraphFontSize, $opensans, 400);
+              }
+            }
+          }
+        }
+      }
+      .footer__three {
+        padding-top: 30px;
+        width: 15%;
+        h3 {
+          text-align: left;
+          color: #ffffff;
+          padding-bottom: 30px;
+          text-transform: uppercase;
+          @include font($headingFontSize, $oswald, 500);
+        }
+        .footer__link {
+          display: flex;
+          justify-content: space-between;
+          .link__one {
+            ul {
+              text-align: left;
+              li {
+                padding-bottom: 25px;
+                a {
+                  color: #ffffff;
+                  @include font($paragraphFontSize, $opensans, 400);
+                  text-transform: capitalize;
+                }
+              }
+            }
+          }
+          .link__two {
+            ul {
+              text-align: left;
+              li {
+                padding-bottom: 25px;
+                a {
+                  color: #ffffff;
+                  @include font($paragraphFontSize, $opensans, 400);
+                  text-transform: capitalize;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer__four {
+        padding-top: 30px;
+        width: 30%;
+        h4 {
+          text-align: left;
+          color: #ffffff;
+          text-transform: uppercase;
+          @include font($headingFontSize, $oswald, 500);
+          padding-bottom: 30px;
+        }
+        .flicker__main {
+          text-align: left;
+          display: flex;
+          img {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer__down {
+  background: #555555;
+  p {
+    padding: 15px;
+    color: #ffffff;
+    @include font($paragraphFontSize, $opensans, 400);
+    span {
+      color: $primaryColor;
+      font-weight: 500;
+    }
+  }
+}

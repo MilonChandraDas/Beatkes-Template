@@ -1,0 +1,94 @@
+#section {
+  text-align: center;
+  margin-top: $sectionGap;
+  .common__heading {
+    position: relative;
+    display: inline-block;
+    h5 {
+      color: $headingFontColor;
+      text-transform: uppercase;
+      @include font(24px, $oswald, 500);
+    }
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .main {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: $sectionGap;
+    .section__col {
+      width: 31.9%;
+      padding: 50px 10px 10px;
+      background: $secondaryColor;
+      position: relative;
+      // margin-right: 20px;
+      transition: all linear 0.3s;
+      &:hover .service__icon img {
+        transform: scale(1.1);
+      }
+      &:hover .service__iconTwo img {
+        transform: scale(1.1);
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+      &:hover .service__iconTwo {
+        background: $primaryColor;
+      }
+      &:hover .service__icon {
+        background: $primaryColor;
+      }
+      &:hover {
+        box-shadow: 0 0 5px 1px;
+      }
+      .service__icon {
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        background: #f1f1f1;
+        border: 5px solid #ffffff;
+        line-height: 84px;
+        border-radius: 50%;
+        left: 50%;
+        top: -42px;
+        transform: translateX(-50%);
+        transition: all linear 0.3s;
+        img {
+          transition: all linear 0.3s;
+        }
+      }
+      .service__iconTwo {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: #f1f1f1;
+        border: 2px solid #ffffff;
+        line-height: 70px;
+        border-radius: 50%;
+        left: 50%;
+        top: -35px;
+        transform: translateX(-50%);
+        transition: all linear 0.3s;
+        img {
+          transition: all linear 0.3s;
+        }
+      }
+      .service__info {
+        h3 {
+          color: $headingFontColor;
+          text-transform: uppercase;
+          @include font($headingFontSize, $oswald, 500);
+        }
+        p {
+          margin-top: 10px;
+          color: $paragraphFontColor;
+          line-height: 24px;
+          @include font($paragraphFontSize, $opensans, 400);
+        }
+      }
+    }
+  }
+}

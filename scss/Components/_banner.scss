@@ -1,0 +1,48 @@
+#banner {
+  @include divSize(100%, auto, url(../images/banner.jpg) no-repeat center);
+  background-size: cover;
+  .banner__overly {
+    @include divSize(100%, 100%, rgba(0, 0, 0, 0.6));
+    .main {
+      flex-wrap: wrap;
+      .banner__info {
+        text-align: right;
+        padding: 85px 0;
+        h3 {
+          color: #ffffff;
+          text-transform: uppercase;
+          @include font(30px, $oswald, 400);
+        }
+        h1 {
+          margin-top: -10px;
+          color: #ffffff;
+          text-transform: uppercase;
+          @include font(40px, $oswald, 700);
+        }
+        p {
+          margin-top: 15px;
+          color: #ffffff;
+          width: 510px;
+          line-height: 24px;
+          margin-left: auto;
+          @include font($paragraphFontSize, $opensans, 400);
+        }
+        a {
+          margin-top: 27px;
+          padding: 10px 20px;
+          border: 1px solid #ffffff;
+          border-radius: 2px;
+          color: #ffffff;
+          text-transform: uppercase;
+          @include font($paragraphFontSize, $oswald, 500);
+          margin-left: 15px;
+          transition: all linear 0.3s;
+          &:hover {
+            background: #0872b9;
+            border: 1px solid #0872b9;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+#team {
+  text-align: center;
+  margin-top: $sectionGap;
+  .common__heading {
+    position: relative;
+    display: inline-block;
+    h5 {
+      color: $headingFontColor;
+      text-transform: uppercase;
+      @include font(24px, $oswald, 500);
+    }
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .main {
+    margin-top: $subSectionGap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .team__col {
+      width: 23%;
+      &:hover h3 {
+        color: $primaryColor;
+      }
+    }
+    .team__img {
+      position: relative;
+      &:hover .team__overly {
+        opacity: 1;
+        width: 80px;
+      }
+      img {
+        width: 100%;
+      }
+      .team__overly {
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: all linear 0.3s;
+        ul {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          li {
+            margin-bottom: 15px;
+            &:nth-child(4) {
+              margin-bottom: 0;
+            }
+            a {
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              transition: all linear 0.3s;
+              &:hover {
+                background: $primaryColor;
+                border: 1px solid $primaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+    h3 {
+      text-transform: uppercase;
+      color: $headingFontColor;
+      @include font($headingFontSize, $oswald, 500);
+      transition: all linear 0.3s;
+    }
+    p {
+      text-transform: capitalize;
+      color: $paragraphFontColor;
+      @include font($paragraphFontSize, $oswald, 400);
+    }
+  }
+}

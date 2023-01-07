@@ -1,0 +1,28 @@
+#heading {
+  background: #0872b9;
+  .main {
+    flex-wrap: wrap;
+    padding: 10px 0;
+    .heading__font {
+      width: 50%;
+      h6 {
+        color: #e7e7e7;
+        text-transform: uppercase;
+        @include font($paragraphFontSize, $opensans, 400);
+      }
+    }
+    .heading__icon {
+      width: 50%;
+      text-align: right;
+      a {
+        font-size: $paragraphFontSize;
+        color: #ffffff;
+        margin-left: 15px;
+        transition: all linear 0.3s;
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+  }
+}

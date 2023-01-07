@@ -1,0 +1,29 @@
+nav {
+  padding: 15px 0;
+  .main {
+    flex-wrap: wrap;
+    .nav__logo {
+      width: 20%;
+    }
+    .nav__menu {
+      width: 80%;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          line-height: 40px;
+          a {
+            margin-left: 15px;
+            text-transform: capitalize;
+            color: #000000;
+            @include font($paragraphFontSize, $opensans, 600);
+            transition: all linear 0.3s;
+            &:hover {
+              color: #0872b9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
